@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+*{
+    font-family: 'Protest Riot', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Estilos de la cabecera*/
+
+header{
+    width: 100%;
+    padding: 40px 0 0 0;
+    background: url("../html_felipe/img/bg-header.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+header nav{
+    width: 80%;
+    /* height: 400px; */
+    margin: auto;
+    /* margin: Centrar un contenedor */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+header nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 60px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400px;
+    transition: .5s;
+}
+
+#hero{
+    width: 80%;
+    text-align: center;
+    margin:0 auto;
+    padding-top: 130px;
+}
+
+#hero h2{
+    font-size: 60px;
+    color: yellow;
+}
+
+#hero h1{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
+
+#hero button{
+    background: yellow;
+    font-size: 30px;
+    padding: 12px 30px;
+    border-radius: 14px;
+    color: #999;
+    border-color: transparent;
+    transform: .5s;
+    cursor: pointer;
+}
+
+#hero button:hover{
+    transform: scale(0.9);
+    background: #000;
+ } 
+
+ nav li a:hover{
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+} 
+
+#logo img{
+    transform: .5s;
+}
+
+#logo img:hover{
+    transform: scale(1.1);
+}
+ 
+/* MAIN Etilos planes */
+
+main{
+    width: 100%;
+    position: relative;
+}
+
+#planes{
+    width: 100%;
+    background: hsl(0, 0%, 100%);
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+#planes h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+#planes p{
+    font-size: 24px;
+    color: #000;
+}
+
+#planes .fila{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 120px;
+}
+
+#planes .col-plan{
+    position: relative;
+}
+
+#planes .col-plan h3{
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: yellow;
+    /* posicion: atras
+    z-index: -1; */
+}
+
+#planes .col-plan img{
+    transform: .5s;
+    cursor: pointer;
+}
+
+#planes .col-plan img:hover{
+    border-radius: 50%;
+}
+
+/* Estilo destinos */
+main{
+    width: 100%;
+    position: relative;
+}
+
+#destinos{
+    width: 100%;
+    background: url(../html_felipe/img/bg-destinos.png);
+    background-size: cover;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#destinos h2{
+    font-size: 50px;
+    margin-bottom: 2px;
+    color: #fff;
+}
+
+#destinos .fila{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-evenly;
+    padding: 80px;
+    transform: .5s;
+}
+
+#destinos .col-des{
+    position: relative;
+}
+
+#destinos .col-des h3{
+    font-size: 30px;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+}
+
+#destinos .col-des img{
+    transition: .5s;
+    cursor: pointer;
+}
+
+#destinos .col-des img:hover{
+    transform: scale(1.1);
+}
+
+
+/* Estilo contactos */
+#contactos{
+    width: 100%;
+    position: relative;
+    padding: 130px 0 200px;
+    background: yellow;
+    text-align: center;
+}
+
+
+#contactos h2{
+    font-size: 30px;
+}
+
+#contatos p{
+    font-size: 22px;
+    padding: 40px 0 40px;
+}
+
+#contactos form{
+    width: 80%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+#contactos .fila{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#contactos input,
+#contactos select{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 10px 0;
+}
+
+#contactos button{
+    background:#000;
+    color: #fff;
+    font-size: 26px;
+    padding: 8px 40px;
+    border-radius: 4px;
+    margin-top: 40px;
+    border-color: transparent;
+}
+
+/* Estilo FOOTER */
+
+footer{
+    width: 100%;
+    background: #000;
+}
+
+p{
+    color: #fff;
+    text-align: center;
+     
+}
+
+/* tablets*/
+
+@media screen and (min-width: 768px) and (max-width: 990px){
+    header{
+        background-color: #000;
+    }
+}
+
+/* phones */
+@media screen and (min-width: 320px) and (max-width: 767px){
+    header{
+        display: block;
+        text-align: center;
+        width: 96%;
+    }
+
+    header nav ul{
+        margin-top: 30px;
+    }
+
+    nav li a{
+        font-size: 15px;
+    }
+
+    #hero h1{
+        font-size: 16px;
+    }
+
+    #hero h2{
+        font-size: 30px;
+    }
+
+    #hero button{
+        font-size: 18px;
+        padding: 8px 14px;
+    }
+
+    #plabnes.fila{
+        display: block;
+    }
+
+    #planes h2{
+        font-size: 36px;            
+    }
+
+    #planes p{
+        font-size: 16px;
+    }
+
+    #planes .col-plan{
+        margin-bottom: 30px;
+    }
+
+    #destinos .fila{
+        display: block;
+    }
+
+    #contactos input,
+    #comtacos select{
+        width: 100%;
+        display: block;
+    }
+}
